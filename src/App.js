@@ -3,11 +3,11 @@ import React from "react";
 export default function App() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar />
       <About />
       <Projects />
       <Skills />
-      <Testimonials />
+      <Testimonials /> */}
     </main>
   );
 }
