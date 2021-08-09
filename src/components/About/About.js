@@ -1,5 +1,5 @@
 import React from "react";
-import "../sass/components/_nav-bar.scss"
+import styles from "./About.module.scss"
 
 export default class About extends React.Component {
     render () {
