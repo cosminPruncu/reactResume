@@ -1,4 +1,5 @@
 import React from "react";
+import "../sass/components/_nav-bar.scss"
 
 export default class About extends React.Component {
     render () {
