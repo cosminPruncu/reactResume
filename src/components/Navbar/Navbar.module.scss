@@ -1,3 +1,12 @@
-.nav-bar {
-    background-color: red;
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #1f2937;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12.5px;
+    align-items: center;
 }

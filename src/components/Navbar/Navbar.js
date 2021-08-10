@@ -5,8 +5,8 @@ import styles from './Navbar.module.scss';
 export default class Navbar extends React.Component {
     render () {
         return (
-            <header className={styles["nav-bar"]}>
-                <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <header className={styles["header"]}>
+                <div className={styles["header-container"]}>
                     <a className="title-font font-medium text-white mb-4 md:mb-0">
                         <a href="#about" className="ml-3 text-xl">
                             Reed Barger
