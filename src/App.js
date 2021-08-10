@@ -5,11 +5,12 @@ import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Testimonials from "./components/Testimonials/Testimonials";
+import "./scss/shared.scss"
 
 export default class App extends React.Component {
   render () {
     return (
-      <main className="text-gray-400 bg-gray-900 body-font">
+      <main className="">
         <Navbar />
         <About />
         <Projects />
