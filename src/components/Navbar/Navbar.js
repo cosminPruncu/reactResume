@@ -6,29 +6,18 @@ export default class Navbar extends React.Component {
     render () {
         return (
             <header className={styles["header"]}>
-                <div className={styles["header-container"]}>
-                    <a className="title-font font-medium text-white mb-4 md:mb-0">
-                        <a href="#about" className="ml-3 text-xl">
-                            Reed Barger
-                        </a>
-                    </a>
-                    <nav
-                        className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-                        <a href="#projects" className="mr-5 hover:text-white">
-                            Past Work
-                        </a>
-                        <a href="#skills" className="mr-5 hover:text-white">
-                            Skills
-                        </a>
-                        <a href="#testimonials" className="mr-5 hover:text-white">
-                            Testimonials
-                        </a>
-                    </nav>
-                    <a href="#contact"
-                        className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-                        Hire Me
-                        {/* <ArrowRightIcon className="w-4 h-4 ml-1" /> */}
-                    </a>
+                <div className={styles["navigation-wrapper"]}>
+                    <div className={styles["header-container"]}>
+                        <a href="#about" className={styles["logo"]}>Cosmin Pruncu</a>
+                        <nav className={styles["nav-bar"]}>
+                            <a href="#projects">Past Work</a>
+                            <a href="#skills">Skills</a>
+                            <a href="#testimonials">Testimonials</a>
+                        </nav>
+                    </div>
+                    <div className={styles["contact-wrapper"]}>
+                        <a href="#contact">Hire Me{/* <ArrowRightIcon className="w-4 h-4 ml-1" /> */}</a>
+                    </div>
                 </div>
             </header>
         );
