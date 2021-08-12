@@ -1,5 +1,6 @@
 import React from "react";
-// import { ArrowRightIcon } from "@heroicons/react/solid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from './Navbar.module.scss';
 
 export default class Navbar extends React.Component {
@@ -16,7 +17,9 @@ export default class Navbar extends React.Component {
                         </nav>
                     </div>
                     <div className={styles["contact-wrapper"]}>
-                        <a href="#contact">Hire Me{/* <ArrowRightIcon className="w-4 h-4 ml-1" /> */}</a>
+                        <a href="#contact">
+                            Hire Me<FontAwesomeIcon className={styles["arrow-right"]} icon={faArrowRight} />
+                        </a>
                     </div>
                 </div>
             </header>
