@@ -3,10 +3,12 @@
 .hero {
     color: $white;
     display: flex;
+    align-items: center;
+    padding: 100px 0;
 }
 
 .hero-wrapper {
-    padding: 20px 0;
+    padding-right: 100px;
     flex-basis: 60%;
 }
 
@@ -33,3 +35,15 @@
     display: flex;
 }
 
+.button-spacing {
+    margin-right: 20px;
+}
+
+.image-wrapper {
+    flex-basis: 40%;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from './Navbar.module.scss';
 
 export default class Navbar extends React.Component {
@@ -18,7 +16,8 @@ export default class Navbar extends React.Component {
                     </div>
                     <div className={styles["contact-wrapper"]}>
                         <a href="#contact">
-                            Hire Me<FontAwesomeIcon className={styles["arrow-right"]} icon={faArrowRight} />
+                            <span>Hire Me</span>
+                            <i className={`fas fa-arrow-right ${styles["arrow-right"]}`}></i>
                         </a>
                     </div>
                 </div>

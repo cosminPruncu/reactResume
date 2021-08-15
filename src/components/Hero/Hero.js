@@ -17,18 +17,16 @@ export default class About extends React.Component {
                             Laborum, voluptas natus?
                         </p>
                         <div className={styles["button-wrapper"]}>
-                            <a href="#contact"
-                                className="primary-button">
-                                Work With Me
+                            <a href="#contact" className={`${styles["button-spacing"]} button primary`}>
+                                <span>Work With Me</span>
                             </a>
-                            <a href="#projects"
-                                className="secondary-button">
-                                See My Past Work
+                            <a href="#projects" className="button secondary">
+                                <span>See My Past Work</span>
                             </a>
                         </div>
                     </div>
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img className="object-cover object-center rounded" alt="hero" src="./coding.svg" />
+                    <div className={styles["image-wrapper"]}>
+                        <img className={styles["image"]} alt="hero" src="./coding.svg" />
                     </div>
                 </div>
             </section>

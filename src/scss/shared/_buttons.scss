@@ -1,13 +1,15 @@
-.primary-button {
-    padding: 8px 25px;
-    color: $white;
-    background-color: $green800;
+.button {
+    padding: 10px 30px;
     border-radius: 4px;
-}
+    font-size: 18px;
 
-.secondary-button {
-    padding: 8px 25px;
-    color: $gray900;
-    background-color: $blue300;
-    border-radius: 4px;
+    &.primary {
+        color: $white;
+        background-color: $green800;
+    }
+
+    &.secondary {
+        color: $gray900;
+        background-color: $blue300;
+    }
 }
