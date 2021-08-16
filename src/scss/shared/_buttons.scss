@@ -6,10 +6,19 @@
     &.primary {
         color: $white;
         background-color: $green800;
+
+        &:hover {
+            background-color: $green700;
+        }
     }
 
     &.secondary {
         color: $gray900;
         background-color: $blue300;
+
+        &:hover {
+            background-color: $blue400;
+            color: $white;
+        }
     }
 }
