@@ -1,1 +1,50 @@
-.Skills {}
+@import "../../scss/shared/shared.scss";
+
+.skills {
+    text-align: center;
+}
+
+.description-wrapper {
+    color: $white;
+    padding-bottom: 80px;
+}
+
+.chip-icon {
+    color: $gray900;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.description {
+    color: $gray900;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.skill-wrapper {
+    flex-basis: calc(50% - 20px);
+    padding: 10px;
+}
+
+.skill {
+    background-color: $blue300;
+    padding: 16px;
+    text-align: left;
+}
+
+.check-icon {
+    color: $green800;
+    padding-right: 16px;
+}
+
+.skill-name {
+    color: $white;
+}
