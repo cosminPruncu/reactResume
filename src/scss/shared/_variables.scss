@@ -5,6 +5,8 @@ $black:       #000000;
 $gray1000:    #fafafa;
 $gray900:     #9ca3af;
 
+$blue800:     #818cf8;
+$blue700:     #4f46e5;
 $blue400:     #374151;
 $blue300:     #1f2937;
 $blue200:     #111827;
@@ -14,3 +16,6 @@ $green700:       #059669;
 
 /* Main Fonts */
 $primaryType: 'Ubuntu', sans-serif;
+
+/* Breakpoints */
+$mobileMax: 767px;

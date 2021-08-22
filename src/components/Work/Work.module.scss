@@ -1,0 +1,79 @@
+@import "../../scss/shared/shared.scss";
+
+.work {
+    text-align: center;
+}
+
+.description-wrapper {
+    color: $white;
+    padding-bottom: rem(25px);
+
+    @media screen and(max-width: $mobileMax) {
+        padding-bottom: rem(30px);
+    }
+}
+
+.people-icon {
+    color: $gray900;
+}
+
+.title {
+    font-size: rem(36px);
+    font-weight: 500;
+}
+
+.work-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: rem(80px);
+
+    @media screen and(max-width: $mobileMax) {
+        flex-direction: column;
+    }
+}
+
+.work {
+    flex-basis: 50%;
+    padding: rem(16px);
+}
+
+.work-description-wrapper {
+    background-color: rgba($blue300, 0.4) ;
+    padding: rem(32px);
+}
+
+.terminal-icon {
+    color: $gray900;
+    display: block;
+    text-align: left;
+    margin-bottom: rem(16px);
+}
+
+.description {
+    color: $gray1000;
+    padding-bottom: rem(24px);
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 100%;
+    width: rem(50px);
+}
+
+.name {
+    display: block;
+}
+
+.company {
+    color: $gray900;
+}
+
+.person-wrapper {
+    padding-left: rem(16px);
+}

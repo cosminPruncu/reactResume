@@ -2,23 +2,29 @@
 
 .hero {
     color: $white;
-    display: flex;
-    align-items: center;
-    padding: 100px 0;
+    padding: rem(100px) 0;
+
+    @media screen and(max-width: $mobileMax) {
+        text-align: center;
+        padding-top: rem(50px);
+    }
 }
 
 .hero-wrapper {
-    padding-right: 100px;
+    padding-right: rem(100px);
     flex-basis: 60%;
+
+    @media screen and(max-width: $mobileMax) {
+        padding: 0;
+    }
 }
 
 .title {
-    font-size: 36px;
+    font-size: rem(36px);
     font-weight: 500;
-    line-height: 40px;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: rem(40px);
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: rem(15px);
 
     .title-sections {
         display: block;
@@ -27,20 +33,29 @@
 
 .description {
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: rem(30px);
     color: $gray900;
 }
 
 .button-wrapper {
     display: flex;
+
+    @media screen and(max-width: $mobileMax) {
+        justify-content: center;
+        padding-bottom: rem(64px);
+    }
 }
 
 .button-spacing {
-    margin-right: 20px;
+    margin-right: rem(20px);
 }
 
 .image-wrapper {
     flex-basis: 40%;
+
+    @media screen and(max-width: $mobileMax) {
+        padding: 0 rem(20px);
+    }
 }
 
 .image {

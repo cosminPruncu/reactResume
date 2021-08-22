@@ -8,30 +8,20 @@ li {
 	padding: 0;
 }
 
-a {
-	text-decoration: none;
+button {
+	border: 0;
+	
+	&:focus {
+		outline: none;
+	}
 }
 
-div,
-p,
-section,
-article,
-main,
-aside,
-header,
-footer,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-fieldset {
+:focus { outline: none;}
+::-moz-focus-inner { border: 0; }
+
+
+*, 
+*::before, 
+*::after {
 	box-sizing: border-box;
-}
-
-p {
-	margin-bottom: 0;
-	margin-top: 0;
 }

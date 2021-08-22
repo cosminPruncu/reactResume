@@ -6,7 +6,11 @@
 
 .description-wrapper {
     color: $white;
-    padding-bottom: 80px;
+    padding-bottom: rem(40px);
+
+    @media screen and(max-width: $mobileMax) {
+        padding-bottom: rem(30px);
+    }
 }
 
 .chip-icon {
@@ -14,7 +18,7 @@
 }
 
 .title {
-    font-size: 36px;
+    font-size: rem(36px);
     font-weight: 500;
 }
 
@@ -26,24 +30,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 80px;
+    padding-bottom: rem(80px);
     margin: 0;
+
+    @media screen and(max-width: $mobileMax) {
+        flex-direction: column;
+    }
 }
 
 .skill-wrapper {
     flex-basis: calc(50% - 20px);
-    padding: 10px;
+    padding: rem(10px);
 }
 
 .skill {
     background-color: $blue300;
-    padding: 16px;
+    padding: rem(16px);
     text-align: left;
 }
 
 .check-icon {
     color: $green800;
-    padding-right: 16px;
+    padding-right: rem(16px);
 }
 
 .skill-name {

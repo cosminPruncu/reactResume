@@ -21,4 +21,16 @@
             color: $white;
         }
     }
+
+    &.submit {
+        color: $white;
+        background-color: $blue800;
+        border: 1px solid $white;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $blue700;
+            border: 1px solid $blue700;
+        }
+    }
 }

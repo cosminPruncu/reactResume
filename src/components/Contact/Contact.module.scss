@@ -1,1 +1,141 @@
-.Contact {}
+@import "../../scss/shared/shared.scss";
+
+.contact {
+    padding-bottom: 40px;
+    position: relative;
+    color: $white;
+}
+
+.iframe-wrapper {
+    padding-right: 20px;
+    height: rem(560px);
+
+    @media screen and(max-width: $mobileMax) {
+        padding-right: 0;
+        height: rem(350px);
+    }
+}
+
+.iframe {
+    border-radius: 8px;
+}
+
+.form {
+    padding-left: 20px;
+
+    @media screen and(max-width: $mobileMax) {
+        padding-left: 0;
+        padding-top: rem(20px);
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+
+    p {
+        color: $gray900;
+        padding-bottom: 40px;
+    }
+
+    input,
+    textarea {
+        color: $white;
+        width: 100%;
+        background-color: $blue300;
+        border-radius: 4px;
+        border: 1px solid $blue400;
+        padding: 4px 12px;
+        line-height: 32px;
+        font-family: $primaryType;
+        font-size: 16px;
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 350ms;
+
+        &:focus {
+            border-color: $blue700;
+            box-shadow: $white 0px 0px 0px 0px, $blue800 0px 0px 0px 2px, rgba($black, 0) 0px 0px 0px 0px;
+        }
+    }
+
+    textarea {
+        resize: none;
+        height: 130px;
+    }
+
+    label {
+        display: block;
+        color: $gray900;
+        padding-bottom: 4px;
+    }
+
+    .name-wrapper {
+        padding-bottom: 24px;
+    }
+    
+    .email-wrapper {
+        padding-bottom: 24px;
+    }
+    
+    .message-wrapper {
+        padding-bottom: 24px;
+    }
+
+    .contact-submit {
+        width: 100%;
+    }
+}
+
+.additional-details-wrapper {
+    background-color: $blue200;
+    position: absolute;
+    display: flex;
+    bottom: 80px;
+    left: 50px;
+    border-radius: 5px;
+
+    @media screen and(max-width: $mobileMax) {
+        display: none;
+    }
+}
+
+.address {
+    flex-basis: 50%;
+    padding: 24px;
+
+    h2 {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        font-weight: 600;
+        margin: 0;
+        padding-bottom: 4px;
+    }
+
+    p {
+        color: $gray900;
+    }
+}
+
+.virtual-address {
+    flex-basis: 50%;
+    padding: 24px;
+
+    h2 {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        font-weight: 600;
+        margin: 0;
+        padding-bottom: 4px;
+    }
+
+    p {
+        color: $gray900;
+    }
+
+    a {
+        display: block;
+        color: $blue800;
+        padding-bottom: 14px;
+    }
+}

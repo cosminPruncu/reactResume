@@ -10,12 +10,16 @@
 
 .description-wrapper {
     color: $white;
-    padding-bottom: 60px;
+    padding-bottom: rem(35px);
+
+    @media screen and(max-width: $mobileMax) {
+        padding-bottom: rem(30px);
+    }
 }
 
 .title {
     display: block;
-    font-size: 36px;
+    font-size: rem(36px);
     font-weight: 500;
 }
 
@@ -26,13 +30,18 @@
 .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: rem(80px);
+
+    @media screen and(max-width: $mobileMax) {
+        flex-direction: column;
+    }
 }
 
 .project {
     flex-basis: calc(50% - 30px);
-    padding: 15px;
+    padding: rem(15px);
 }
 
 .project-wrapper {
@@ -58,7 +67,7 @@
     position: relative;
     background-color: $blue200;
     color: $white;
-    padding: 40px 30px;
+    padding: rem(40px) rem(30px);
     border: 4px solid $blue300;
 
     &:hover {
@@ -70,14 +79,14 @@
     letter-spacing: 0.1em;
     font-weight: 600;
     color: $green800;
-    font-size: 14px;
+    font-size: rem(14px);
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: rem(10px);
 }
 
 .project-subtitle {
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: rem(20px);
 }
 
 .project-details {

@@ -4,7 +4,7 @@ import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
-import Testimonials from "./components/Testimonials/Testimonials";
+import Work from "./components/Work/Work";
 import "./scss/vendors/vendor.scss";
 import "./scss/shared/shared.scss";
 
@@ -16,7 +16,7 @@ export default class App extends React.Component {
         <Hero />
         <Projects />
         <Skills />
-        <Testimonials />
+        <Work />
         <Contact />
       </main>
     );
