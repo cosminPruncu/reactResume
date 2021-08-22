@@ -20,10 +20,10 @@ export default class About extends React.Component {
                                 </p>
                                 <div className={styles["button-wrapper"]}>
                                     <a href="#contact" className={`${styles["button-spacing"]} button primary`}>
-                                        <span>Work With Me</span>
+                                        <span>See my projects</span>
                                     </a>
                                     <a href="#projects" className="button secondary">
-                                        <span>See My Past Work</span>
+                                        <span>Past Work Experience</span>
                                     </a>
                                 </div>
                             </div>

@@ -76,24 +76,24 @@ export default class Contact extends React.Component {
                                     <div className={styles["address"]}>
                                         <h2>ADDRESS</h2>
                                         <p>
-                                            97 Warren St. <br />
-                                            New York, NY 10007
+                                            Cluj-Napoca <br />
+                                            Romania
                                         </p>
                                     </div>
                                     <div className={styles["virtual-address"]}>
                                         <h2>EMAIL</h2>
                                         <a href="mailto: cosmin.pruncu@gmail.com">
-                                            reedbarger@email.com
+                                            cosmin.pruncu@gmail.com
                                         </a>
                                         <h2>PHONE</h2>
-                                        <p>123-456-7890</p>
+                                        <p>0743-844-965</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4 col-12">
                             <form netlify name="contact" className={styles["form"]} onSubmit={(e) => this.handleSubmit(e)}>
-                                <h2>Hire Me</h2>
+                                <h2>Let's talk</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
                                     suscipit officia aspernatur veritatis. Asperiores, aliquid?

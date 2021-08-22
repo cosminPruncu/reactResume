@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from './Navbar.module.scss';
 
 export default class Navbar extends React.Component {
@@ -9,14 +10,14 @@ export default class Navbar extends React.Component {
                     <div className={styles["header-container"]}>
                         <a href="#about" className={styles["logo"]}>Cosmin Pruncu</a>
                         <nav className={styles["nav-bar"]}>
-                            <a href="#projects">Past Work</a>
-                            <a href="#skills">Skills</a>
-                            <a href="#testimonials">Testimonials</a>
+                            <Link to="/projects">Projects</Link>
+                            <a href="#skills">Past Work</a>
+                            <a href="#testimonials">Skills</a>
                         </nav>
                     </div>
                     <div className={styles["contact-wrapper"]}>
                         <a href="#contact">
-                            <span>Hire Me</span>
+                            <span>Let's talk</span>
                             <i className={`fas fa-arrow-right ${styles["arrow-right"]}`}></i>
                         </a>
                     </div>

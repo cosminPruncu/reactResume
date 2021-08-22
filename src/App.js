@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import Work from "./components/Work/Work";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 import "./scss/vendors/vendor.scss";
 import "./scss/shared/shared.scss";
 
@@ -12,12 +13,16 @@ export default class App extends React.Component {
   render () {
     return (
       <main className="main-page">
-        <Navbar />
-        <Hero />
-        <Projects />
-        <Skills />
-        <Work />
-        <Contact />
+        <BrowserRouter>
+          <Navbar />
+          <Hero />
+          
+          <Switch>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+        </Switch>
+        </BrowserRouter>
       </main>
     );
   }
