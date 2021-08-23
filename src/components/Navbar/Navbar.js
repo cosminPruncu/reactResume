@@ -11,8 +11,8 @@ export default class Navbar extends React.Component {
                         <a href="#about" className={styles["logo"]}>Cosmin Pruncu</a>
                         <nav className={styles["nav-bar"]}>
                             <Link to="/projects">Projects</Link>
-                            <a href="#skills">Past Work</a>
-                            <a href="#testimonials">Skills</a>
+                            <Link to="/past-work">Past Work</Link>
+                            <Link to="/skills">Skills</Link>
                         </nav>
                     </div>
                     <div className={styles["contact-wrapper"]}>

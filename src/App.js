@@ -21,6 +21,12 @@ export default class App extends React.Component {
             <Route path="/projects">
               <Projects />
             </Route>
+            <Route path="/skills">
+              <Skills />
+            </Route>
+            <Route path="/work">
+              <Work />
+            </Route>
         </Switch>
         </BrowserRouter>
       </main>
