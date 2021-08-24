@@ -16,7 +16,6 @@ export default class App extends React.Component {
         <BrowserRouter>
           <Navbar />
           <Hero />
-          
           <Switch>
             <Route path="/projects">
               <Projects />
@@ -27,7 +26,8 @@ export default class App extends React.Component {
             <Route path="/work">
               <Work />
             </Route>
-        </Switch>
+          </Switch>
+          <Contact />
         </BrowserRouter>
       </main>
     );

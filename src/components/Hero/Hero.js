@@ -20,10 +20,11 @@ export default class About extends React.Component {
                                 </p>
                                 <div className={styles["button-wrapper"]}>
                                     <a href="#contact" className={`${styles["button-spacing"]} button primary`}>
-                                        <span>See my projects</span>
+                                        <span>Download CV</span>
+                                        {/* https://preview.themeforest.net/item/retro-one-page-resumeportfolio-template/full_screen_preview/26328816 */}
                                     </a>
                                     <a href="#projects" className="button secondary">
-                                        <span>Past Work Experience</span>
+                                        <span>See my projects</span>
                                     </a>
                                 </div>
                             </div>
